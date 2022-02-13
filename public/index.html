@@ -21,7 +21,8 @@
             <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Official</a>
             <a href="https://tailwindcss.com/docs/flex/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Flex</a>
             <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Grid</a>
-            <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Gradient</a>
+            <a href="https://tailwindcss.com/docs/gradient-color-stops/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Gradient</a>
+            <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Outline</a>
             <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Outline</a>
         </nav>
     </header>
@@ -32,7 +33,7 @@
             <div id="star" class="animate-ping"></div>
         </div>
     </section> -->
-    <section class="bg-slate-400 h-96">
+    <section id="install" class="bg-slate-400 h-96 max-w-screen max-h-screen">
         <h2 class="bg-cyan-700 text-cyan-200 text text-2xl px-2 h-12">INSTALL</h2>
         <div class="grid grid-cols-2">
             <pre class="h-44 bg-gradient-to-r from-slate-600 via-purple-500 to-slate-600 text-blue-100 p-4 m-4 rounded-md">npm i -D tailwindcss</pre>
@@ -48,7 +49,20 @@
             @tailwind components;
             @tailwind utilities;</pre>
             <pre class="h-44 bg-gradient-to-r from-slate-600 via-purple-500 to-slate-600 text-blue-100 p-4 m-4 rounded-md">npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch</pre>
-            <p></p>
+            <pre class="h-44 bg-gradient-to-r from-slate-600 via-purple-500 to-slate-600 text-blue-100 p-4 m-4 rounded-md"><!doctype html>
+                &#60;html&#62;
+                &#60;head&#62;
+                  &#60;meta charset="UTF-8"&#62;
+                  &#60;meta name="viewport" content="width=device-width, initial-scale=1.0"&#62;
+                  &#60;link href="/dist/output.css" rel="stylesheet"&#62;
+                &#60;/head&#62;
+                &#60;body&#62;
+                  &#60;h1 class="text-3xl font-bold underline"&#62;
+                    Hello world!
+                  &#60;/h1&#62;
+                &#60;/body&#62;
+                &#60;/html&#62;
+            </pre>
         </div>
             
     </section>
