@@ -10,18 +10,20 @@
     <title>Tailwind test</title>
 </head>
 <body>
-    <header class="m-0 h-32 bg-cyan-900">
-        <nav class="min-w-full h-16 bg-cyan-900 grid grid-cols-5 gap-0.5">
-            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">text</a>
-            <a href="https://tailwindcss.com/docs/responsive-design/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">Responsive Design</a>
-            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">official</a>
-            <a href="https://tailwindcss.com/docs/flex/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">flex</a>
-            <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">grid</a>
-        </nav>
-        <div class="h-24 bg-slate-800 flex justify-center items-center">
+    <header class="m-0 h-44 bg-cyan-900">
+        <div class="h-16 bg-slate-800 flex justify-center items-center">
             <img src="../assets/tailwind-favicon.svg" class="h-8 m-3 animate-bounce"></img>
             <h1 class="text-cyan-200 text-3xl font-mono hover:font-serif">TAILWINDCSS</h1>
         </div>
+        <nav class="min-w-full h-28 bg-cyan-900 grid grid-cols-4 gap-0.5 px-10 py-3">
+            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Text</a>
+            <a href="https://tailwindcss.com/docs/responsive-design/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Responsive</a>
+            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Official</a>
+            <a href="https://tailwindcss.com/docs/flex/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Flex</a>
+            <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Grid</a>
+            <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Gradient</a>
+            <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 m-1 py-1 hover:outline hover:outline-offset-2 hover:outline-2">Outline</a>
+        </nav>
     </header>
     <!-- <section id="animated-star" class="h-60 bg-yellow-300  overflow-hidden">
         <div id="box">
@@ -30,22 +32,22 @@
             <div id="star" class="animate-ping"></div>
         </div>
     </section> -->
-    <section class="bg-slate-400">
-        <h2 class="bg-cyan-700 text-cyan-200 px-2">INSTALL</h2>
-        <div class="grid grid-cols-3">
-            <p>npm i -D tailwindcss</p>
-            <p>npx tailwindcss init</p>
-            <p>module.exports = {
+    <section class="bg-slate-400 h-96">
+        <h2 class="bg-cyan-700 text-cyan-200 text text-2xl px-2 h-12">INSTALL</h2>
+        <div class="grid grid-cols-2">
+            <pre class="h-44 bg-gradient-to-r from-slate-600 via-purple-500 to-slate-600 text-blue-100 p-4 m-4 rounded-md">npm i -D tailwindcss</pre>
+            <pre class="h-44 bg-gradient-to-r from-slate-600 via-purple-500 to-slate-600 text-blue-100 p-4 m-4 rounded-md">npx tailwindcss init</emp>
+            <pre class="h-44 bg-gradient-to-r from-slate-600 via-purple-500 to-slate-600 text-blue-100 p-4 m-4 rounded-md">module.exports = {
                 content: ["./src/**/*.{html,js}"],
                 theme: {
                     extend: {},
                 },
                 plugins: [],
-            }</p>
-        <p>@tailwind base;
+            }</pre>
+        <pre class="h-44 bg-gradient-to-r from-slate-600 via-purple-500 to-slate-600 text-blue-100 p-4 m-4 rounded-md">@tailwind base;
             @tailwind components;
-            @tailwind utilities;</p>
-            <p>npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch</p>
+            @tailwind utilities;</pre>
+            <pre class="h-44 bg-gradient-to-r from-slate-600 via-purple-500 to-slate-600 text-blue-100 p-4 m-4 rounded-md">npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch</pre>
             <p></p>
         </div>
             
