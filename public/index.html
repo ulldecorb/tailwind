@@ -10,21 +10,45 @@
     <title>Tailwind test</title>
 </head>
 <body>
-    <header class="bg-cyan-900 m-0 h-12 flex justify-center items-center">
-        <img src="../assets/tailwind-favicon.svg" class="h-8 m-3"></img>
-        <h1 class="text-cyan-200 text-3xl font-mono hover:font-serif">TAILWINDCSS</h1>
+    <header class="m-0 h-32 bg-cyan-900">
+        <nav class="min-w-full h-16 bg-cyan-900 grid grid-cols-5 gap-0.5">
+            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">text</a>
+            <a href="https://tailwindcss.com/docs/responsive-design/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">Responsive Design</a>
+            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">official</a>
+            <a href="https://tailwindcss.com/docs/flex/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">flex</a>
+            <a href="https://tailwindcss.com/docs/grid-template-columns/" target="_blank" rel="noopener noreferrer" class="text-cyan-200 rounded-full bg-slate-700 text-center hover:bg-slate-500 h-8 py-1">grid</a>
+        </nav>
+        <div class="h-24 bg-slate-800 flex justify-center items-center">
+            <img src="../assets/tailwind-favicon.svg" class="h-8 m-3 animate-bounce"></img>
+            <h1 class="text-cyan-200 text-3xl font-mono hover:font-serif">TAILWINDCSS</h1>
+        </div>
     </header>
-    <section id="animated-star" class="h-60 bg-yellow-300 animate-bounce overflow-hidden">
+    <!-- <section id="animated-star" class="h-60 bg-yellow-300  overflow-hidden">
         <div id="box">
             <div id="conic-gradient"></div>
             <div id="circle-plain"></div>
             <div id="star" class="animate-ping"></div>
         </div>
-    </section>
-    <section>
-        <h2>INSTALL</h2>
-        <p>npm i -D tailwindcss</p>
-        <p>npm tailwindcss init</p>
+    </section> -->
+    <section class="bg-slate-400">
+        <h2 class="bg-cyan-700 text-cyan-200 px-2">INSTALL</h2>
+        <div class="grid grid-cols-3">
+            <p>npm i -D tailwindcss</p>
+            <p>npx tailwindcss init</p>
+            <p>module.exports = {
+                content: ["./src/**/*.{html,js}"],
+                theme: {
+                    extend: {},
+                },
+                plugins: [],
+            }</p>
+        <p>@tailwind base;
+            @tailwind components;
+            @tailwind utilities;</p>
+            <p>npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch</p>
+            <p></p>
+        </div>
+            
     </section>
     <!-- <div class="min-h-screen bg-pink-500">
         <div class="bg-red-500 m-6 p-12 text-center border-white-800 border-2 rounded-xl">
